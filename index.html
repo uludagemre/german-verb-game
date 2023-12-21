@@ -69,6 +69,13 @@
       /* Center the content horizontally within the container */
     }
 
+    /* Style for the label above the difficulty selection button */
+    .small-label {
+      font-size: 16px; /* Adjust the font size as needed */
+      margin-bottom: 10px; /* Add some spacing between the label and the button */
+      text-align: center; /* Center the text horizontally */
+    }
+
     #difficulty {
       font-size: 18px;
       /* Adjust the value to your desired font size */
@@ -91,7 +98,6 @@
     src="https://media.licdn.com/dms/image/C560BAQFXRpr6U2qmkg/company-logo_200_200/0/1631362217617?e=2147483647&v=beta&t=CMXKJWLdqHWW8LnVU3cWNqyd_Grr4bSGlK9KshYNo-s"
     alt="Company Logo">
 
-
   <!-- Multiple-choice select input for difficulty level -->
   <div id="container">
     <select id="difficulty" name="difficulty" onchange="addFields()">
@@ -102,20 +108,21 @@
 
   <div id="jsonData"></div>
 
+  <div id="label3PS" class="small-label">3. Person Singular</div>
 
   <!-- Input boxes -->
   <input type="text" id="prasens_input" placeholder="präsens">
   <input type="text" id="prat_input" placeholder="präteritum">
-  <input type="text" id="partizip_input" placeholder="partizip II">
+  <input type="text" id="partizip_input" placeholder="hat/ist partizip II">
 
 
   <div id="additionalFields">
     <!-- Additional fields will be added here based on the selected difficulty -->
     <div id="field1Container" style="display: none;">
-      <input type="text" id="konj_1_input" placeholder="Konjuktiv 1">
+      <input type="text" id="konj_1_input" placeholder="konjuktiv 1">
     </div>
     <div id="field2Container" style="display: none;">
-      <input type="text" id="konj_1_input" placeholder="Konjuktiv 2">
+      <input type="text" id="konj_2_input" placeholder="konjuktiv 2">
     </div>
   </div>
   
@@ -273,10 +280,14 @@
     const input1 = document.getElementById('prasens_input');
     const input2 = document.getElementById('prat_input');
     const input3 = document.getElementById('partizip_input');
+    const input4 = document.getElementById('konj_1_input');
+    const input5 = document.getElementById('konj_2_input');
 
     input1.addEventListener('keydown', pushEnterButton);
     input2.addEventListener('keydown', pushEnterButton);
     input3.addEventListener('keydown', pushEnterButton);
+    input4.addEventListener('keydown', pushEnterButton);
+    input5.addEventListener('keydown', pushEnterButton);
 
     // Add a click event listener to the submit button
     const submitButton = document.getElementById('submitButton');
