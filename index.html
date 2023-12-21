@@ -133,6 +133,8 @@
     // Variable to store the verb data
 
     let correctVerbs = []
+    
+    let verbData = []
 
     let wrongVerbs = []
 
@@ -141,7 +143,7 @@
     // Function to load verb data from a file
     async function loadVerbData() {
       try {
-        const response = await fetch('data.json');
+        const response = await fetch('https://raw.githubusercontent.com/uludagemre/germanProjects/main/data.json');
         verbData = await response.json();
       } catch (error) {
         console.error('Error loading verb data:', error);
@@ -185,8 +187,8 @@
       randomizeVerb(verbData);
     }
 
-    function loadPage() {
-      // await loadVerbData();
+    async function loadPage() {
+      await loadVerbData();
       playGame();
     }
 
@@ -260,87 +262,6 @@
     const submitButton = document.getElementById('submitButton');
     submitButton.addEventListener('click', pushSubmitButton);
 
-    let verbData =
-      [
-        {
-          "verb": "fahren",
-          "hat_ist": "ist",
-          "prat": "fuhr",
-          "perf": "gefahren"
-        },
-        {
-          "verb": "wachsen",
-          "hat_ist": "ist",
-          "prat": "wuchs",
-          "perf": "gewachsen"
-        },
-        {
-          "verb": "backen",
-          "hat_ist": "hat",
-          "prat": "buk",
-          "perf": "gebacken"
-        },
-        {
-          "verb": "graben",
-          "hat_ist": "hat",
-          "prat": "grub",
-          "perf": "gegraben"
-        },
-        {
-          "verb": "tragen",
-          "hat_ist": "hat",
-          "prat": "trug",
-          "perf": "getragen"
-        },
-        {
-          "verb": "fallen",
-          "hat_ist": "ist",
-          "prat": "fiel",
-          "perf": "gefallen"
-        },
-        {
-          "verb": "lassen",
-          "hat_ist": "hat",
-          "prat": "ließ",
-          "perf": "gelassen"
-        },
-        {
-          "verb": "schlafen",
-          "hat_ist": "hat",
-          "prat": "schlief",
-          "perf": "geschlafen"
-        },
-        {
-          "verb": "lesen",
-          "hat_ist": "hat",
-          "prat": "las",
-          "perf": "gelesen"
-        },
-        {
-          "verb": "essen",
-          "hat_ist": "hat",
-          "prat": "aß",
-          "perf": "gegessen"
-        },
-        {
-          "verb": "helfen",
-          "hat_ist": "hat",
-          "prat": "half",
-          "perf": "geholfen"
-        },
-        {
-          "verb": "sprechen",
-          "hat_ist": "hat",
-          "prat": "sprach",
-          "perf": "gesprochen"
-        },
-        {
-          "verb": "treffen",
-          "hat_ist": "hat",
-          "prat": "traf",
-          "perf": "getroffen"
-        }
-      ]
   </script>
 
 </body>
