@@ -125,7 +125,7 @@
       <input type="text" id="konj_2_input" placeholder="konjuktiv 2">
     </div>
   </div>
-  
+
   <button id="submitButton">Submit</button>
 
 
@@ -140,7 +140,7 @@
     // Variable to store the verb data
 
     let correctVerbs = []
-    
+
     let verbData = []
 
     let wrongVerbs = []
@@ -205,7 +205,7 @@
       document.getElementById('prasens_input').value = '';
       document.getElementById('prat_input').value = '';
       document.getElementById('partizip_input').value = '';
-      
+
       if (difficulty === "difficult") {
         document.getElementById('konj_1_input').value = '';
         document.getElementById('konj_2_input').value = '';
@@ -232,7 +232,7 @@
       const prat_input = document.getElementById('prat_input').value;
       const perf_input = document.getElementById('partizip_input').value;
 
-      
+
       success_condition = prasens_input.toLowerCase() === currentVerb['pras'] && prat_input.toLowerCase() === currentVerb['prat'] && perf_input.toLowerCase() === currentVerb['perf']
 
       if (difficulty === "difficult"){
@@ -240,14 +240,14 @@
         const konj_2_input = document.getElementById('konj_2_input').value;
 
         success_condition = success_condition && konj_1_input.toLowerCase() === currentVerb['konj_1'] && konj_2_input.toLowerCase() === currentVerb['konj_2']
-      } 
+      }
 
       if (success_condition) {
         score += 1
         correctVerbs.push(currentVerb)
       } else {
         wrongVerbs.push(currentVerb)
-        
+
         // Display an alert with the correct forms
         var correctFormsMessage = `Correct forms: \n\n${currentVerb['pras']} \n${currentVerb['prat']} \n${currentVerb['perf']}`;
         if (difficulty === "difficult"){
