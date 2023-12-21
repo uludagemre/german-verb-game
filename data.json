@@ -1,0 +1,890 @@
+[
+  {
+    "verb": "befehlen",
+    "pras": "befehlt",
+    "prat": "befahl",
+    "perf": "hat befohlen",
+    "konj_1": "befehle",
+    "konj_2": "befähle"
+  },
+  {
+    "verb": "beginnen",
+    "pras": "beginnt",
+    "prat": "begann",
+    "perf": "hat begonnen",
+    "konj_1": "beginne",
+    "konj_2": "begänne"
+  },
+  {
+    "verb": "beißen",
+    "pras": "beißt",
+    "prat": "biss",
+    "perf": "hat gebissen",
+    "konj_1": "beiße",
+    "konj_2": "bösse"
+  },
+  {
+    "verb": "beschreiben",
+    "pras": "beschreibt",
+    "prat": "beschrieb",
+    "perf": "hat beschrieben",
+    "konj_1": "beschreibe",
+    "konj_2": "beschriebe"
+  },
+  {
+    "verb": "bieten",
+    "pras": "bietet",
+    "prat": "bot",
+    "perf": "hat geboten",
+    "konj_1": "biete",
+    "konj_2": "böte"
+  },
+  {
+    "verb": "binden",
+    "pras": "bindet",
+    "prat": "band",
+    "perf": "hat gebunden",
+    "konj_1": "binde",
+    "konj_2": "bände"
+  },
+  {
+    "verb": "bleiben",
+    "pras": "bleibt",
+    "prat": "blieb",
+    "perf": "ist geblieben",
+    "konj_1": "bleibe",
+    "konj_2": "bliebe"
+  },
+  {
+    "verb": "brechen",
+    "pras": "bricht",
+    "prat": "brach",
+    "perf": "hat gebrochen",
+    "konj_1": "breche",
+    "konj_2": "bräche"
+  },
+  {
+    "verb": "dürfen",
+    "pras": "darf",
+    "prat": "durfte",
+    "perf": "hat gedurft",
+    "konj_1": "dürfe",
+    "konj_2": "dürfte"
+  },
+  {
+    "verb": "empfangen",
+    "pras": "empfängt",
+    "prat": "empfing",
+    "perf": "hat empfangen",
+    "konj_1": "empfange",
+    "konj_2": "empfinge"
+  },
+  {
+    "verb": "empfehlen",
+    "pras": "empfiehlt",
+    "prat": "empfahl",
+    "perf": "hat empfohlen",
+    "konj_1": "empfehle",
+    "konj_2": "empföhle"
+  },
+  {
+    "verb": "empfinden",
+    "pras": "empfindet",
+    "prat": "empfand",
+    "perf": "hat empfunden",
+    "konj_1": "empfinde",
+    "konj_2": "empfände"
+  },
+  {
+    "verb": "erschrecken",
+    "pras": "erschrickt",
+    "prat": "erschrak",
+    "perf": "ist erschrocken",
+    "konj_1": "erschrecke",
+    "konj_2": "erschräke"
+  },
+  {
+    "verb": "erziehen",
+    "pras": "erzieht",
+    "prat": "erzog",
+    "perf": "hat erzogen",
+    "konj_1": "erziehe",
+    "konj_2": "erzöge"
+  },
+  {
+    "verb": "essen",
+    "pras": "isst",
+    "prat": "aß",
+    "perf": "hat gegessen",
+    "konj_1": "esse",
+    "konj_2": "äße"
+  },
+  {
+    "verb": "fahren",
+    "pras": "fährt",
+    "prat": "fuhr",
+    "perf": "ist gefahren",
+    "konj_1": "fahre",
+    "konj_2": "führe"
+  },
+  {
+    "verb": "fallen",
+    "pras": "fällt",
+    "prat": "fiel",
+    "perf": "ist gefallen",
+    "konj_1": "falle",
+    "konj_2": "fiele"
+  },
+  {
+    "verb": "fangen",
+    "pras": "fängt",
+    "prat": "fing",
+    "perf": "hat gefangen",
+    "konj_1": "fange",
+    "konj_2": "finge"
+  },
+  {
+    "verb": "fernsehen",
+    "pras": "siehst fern",
+    "prat": "sah fern",
+    "perf": "hat ferngesehen",
+    "konj_1": "sehe fern",
+    "konj_2": "sähe fern"
+  },
+  {
+    "verb": "finden",
+    "pras": "findet",
+    "prat": "fand",
+    "perf": "hat gefunden",
+    "konj_1": "finde",
+    "konj_2": "fände"
+  },
+  {
+    "verb": "fliegen",
+    "pras": "fliegt",
+    "prat": "flog",
+    "perf": "ist geflogen",
+    "konj_1": "fliege",
+    "konj_2": "flöge"
+  },
+  {
+    "verb": "fliehen",
+    "pras": "flieht",
+    "prat": "floh",
+    "perf": "ist geflohen",
+    "konj_1": "fliehe",
+    "konj_2": "flöhe"
+  },
+  {
+    "verb": "fließen",
+    "pras": "fließt",
+    "prat": "floß",
+    "perf": "ist geflossen",
+    "konj_1": "fließe",
+    "konj_2": "flösse"
+  },
+  {
+    "verb": "frieren",
+    "pras": "friert",
+    "prat": "fror",
+    "perf": "hat gefroren",
+    "konj_1": "friere",
+    "konj_2": "fröre"
+  },
+  {
+    "verb": "geben",
+    "pras": "gibt",
+    "prat": "gab",
+    "perf": "hat gegeben",
+    "konj_1": "gebe",
+    "konj_2": "gäbe"
+  },
+  {
+    "verb": "gefallen",
+    "pras": "gefällt",
+    "prat": "gefiel",
+    "perf": "hat gefallen",
+    "konj_1": "gefalle",
+    "konj_2": "gefiele"
+  },
+  {
+    "verb": "gehen",
+    "pras": "geht",
+    "prat": "ging",
+    "perf": "ist gegangen",
+    "konj_1": "gehe",
+    "konj_2": "ginge"
+  },
+  {
+    "verb": "gelingen",
+    "pras": "gelingt",
+    "prat": "gelang",
+    "perf": "ist gelungen",
+    "konj_1": "gelinge",
+    "konj_2": "gelänge"
+  },
+  {
+    "verb": "genießen",
+    "pras": "genießt",
+    "prat": "genoss",
+    "perf": "hat genossen",
+    "konj_1": "genieße",
+    "konj_2": "genösse"
+  },
+  {
+    "verb": "geschehen",
+    "pras": "geschieht",
+    "prat": "geschah",
+    "perf": "ist geschehen",
+    "konj_1": "geschehe",
+    "konj_2": "geschähe"
+  },
+  {
+    "verb": "gewinnen",
+    "pras": "gewinnt",
+    "prat": "gewann",
+    "perf": "hat gewonnen",
+    "konj_1": "gewinne",
+    "konj_2": "gewönne"
+  },
+  {
+    "verb": "gießen",
+    "pras": "gießt",
+    "prat": "goss",
+    "perf": "hat gegossen",
+    "konj_1": "gieße",
+    "konj_2": "gösse"
+  },
+  {
+    "verb": "gleichen",
+    "pras": "gleicht",
+    "prat": "glich",
+    "perf": "hat geglichen",
+    "konj_1": "gleiche",
+    "konj_2": "glöche"
+  },
+  {
+    "verb": "greifen",
+    "pras": "greift",
+    "prat": "griff",
+    "perf": "hat gegriffen",
+    "konj_1": "greife",
+    "konj_2": "griffe"
+  },
+  {
+    "verb": "haben",
+    "pras": "hat",
+    "prat": "hatte",
+    "perf": "hat gehabt",
+    "konj_1": "habe",
+    "konj_2": "hätte"
+  },
+  {
+    "verb": "halten",
+    "pras": "hält",
+    "prat": "hielt",
+    "perf": "hat gehalten",
+    "konj_1": "halte",
+    "konj_2": "hielte"
+  },
+  {
+    "verb": "hängen",
+    "pras": "hängt",
+    "prat": "hing",
+    "perf": "hat gehangen",
+    "konj_1": "hänge",
+    "konj_2": "hinge"
+  },
+  {
+    "verb": "heißen",
+    "pras": "heißt",
+    "prat": "hieß",
+    "perf": "hat geheißen",
+    "konj_1": "heiße",
+    "konj_2": "hieße"
+  },
+  {
+    "verb": "helfen",
+    "pras": "hilft",
+    "prat": "half",
+    "perf": "hat geholfen",
+    "konj_1": "helfe",
+    "konj_2": "hülfe"
+  },
+  {
+    "verb": "kommen",
+    "pras": "kommt",
+    "prat": "kam",
+    "perf": "ist gekommen",
+    "konj_1": "komme",
+    "konj_2": "käme"
+  },
+  {
+    "verb": "können",
+    "pras": "kann",
+    "prat": "konnte",
+    "perf": "hat gekonnt",
+    "konj_1": "könne",
+    "konj_2": "könnte"
+  },
+  {
+    "verb": "kriechen",
+    "pras": "kriecht",
+    "prat": "kroch",
+    "perf": "ist gekrochen",
+    "konj_1": "krieche",
+    "konj_2": "kröche"
+  },
+  {
+    "verb": "laden",
+    "pras": "lädt",
+    "prat": "lud",
+    "perf": "hat geladen",
+    "konj_1": "lade",
+    "konj_2": "lüde"
+  },
+  {
+    "verb": "lassen",
+    "pras": "lässt",
+    "prat": "ließ",
+    "perf": "hat gelassen",
+    "konj_1": "lasse",
+    "konj_2": "ließe"
+  },
+  {
+    "verb": "laufen",
+    "pras": "läuft",
+    "prat": "lief",
+    "perf": "ist gelaufen",
+    "konj_1": "laufe",
+    "konj_2": "liefe"
+  },
+  {
+    "verb": "leiden",
+    "pras": "leidet",
+    "prat": "litt",
+    "perf": "hat gelitten",
+    "konj_1": "leide",
+    "konj_2": "lide"
+  },
+  {
+    "verb": "leihen",
+    "pras": "leihst",
+    "prat": "lieh",
+    "perf": "hat geliehen",
+    "konj_1": "leihe",
+    "konj_2": "liehe"
+  },
+  {
+    "verb": "lesen",
+    "pras": "liest",
+    "prat": "las",
+    "perf": "hat gelesen",
+    "konj_1": "lese",
+    "konj_2": "läse"
+  },
+  {
+    "verb": "liegen",
+    "pras": "liegst",
+    "prat": "lag",
+    "perf": "hat gelegen",
+    "konj_1": "liege",
+    "konj_2": "läge"
+  },
+  {
+    "verb": "lügen",
+    "pras": "lügt",
+    "prat": "log",
+    "perf": "hat gelogen",
+    "konj_1": "lüge",
+    "konj_2": "löge"
+  },
+  {
+    "verb": "mögen",
+    "pras": "mag",
+    "prat": "mochte",
+    "perf": "hat gemocht",
+    "konj_1": "möge",
+    "konj_2": "möchte"
+  },
+  {
+    "verb": "müssen",
+    "pras": "muss",
+    "prat": "musste",
+    "perf": "hat gemusst",
+    "konj_1": "müsse",
+    "konj_2": "müsste"
+  },
+  {
+    "verb": "nehmen",
+    "pras": "nimmst",
+    "prat": "nahm",
+    "perf": "hat genommen",
+    "konj_1": "nehme",
+    "konj_2": "nähme"
+  },
+  {
+    "verb": "pfeifen",
+    "pras": "pfeift",
+    "prat": "pfiff",
+    "perf": "hat gepfiffen",
+    "konj_1": "pfeife",
+    "konj_2": "pfiffe"
+  },
+  {
+    "verb": "raten",
+    "pras": "rät",
+    "prat": "riet",
+    "perf": "hat geraten",
+    "konj_1": "rate",
+    "konj_2": "riete"
+  },
+  {
+    "verb": "reißen",
+    "pras": "reißt",
+    "prat": "riss",
+    "perf": "hat gerissen",
+    "konj_1": "reiße",
+    "konj_2": "risse"
+  },
+  {
+    "verb": "reiten",
+    "pras": "reitet",
+    "prat": "ritt",
+    "perf": "hat geritten",
+    "konj_1": "reite",
+    "konj_2": "ritte"
+  },
+  {
+    "verb": "riechen",
+    "pras": "riecht",
+    "prat": "roch",
+    "perf": "hat gerochen",
+    "konj_1": "rieche",
+    "konj_2": "röche"
+  },
+  {
+    "verb": "rufen",
+    "pras": "ruft",
+    "prat": "rief",
+    "perf": "hat gerufen",
+    "konj_1": "rufe",
+    "konj_2": "riefe"
+  },
+  {
+    "verb": "scheinen",
+    "pras": "scheint",
+    "prat": "schien",
+    "perf": "hat geschienen",
+    "konj_1": "scheine",
+    "konj_2": "schiene"
+  },
+  {
+    "verb": "schieben",
+    "pras": "schiebt",
+    "prat": "schob",
+    "perf": "hat geschoben",
+    "konj_1": "schiebe",
+    "konj_2": "schöbe"
+  },
+  {
+    "verb": "schießen",
+    "pras": "schießt",
+    "prat": "schoss",
+    "perf": "hat geschossen",
+    "konj_1": "schieße",
+    "konj_2": "schösse"
+  },
+  {
+    "verb": "schlafen",
+    "pras": "schläft",
+    "prat": "schlief",
+    "perf": "hat geschlafen",
+    "konj_1": "schlafe",
+    "konj_2": "schlöfe"
+  },
+  {
+    "verb": "schlagen",
+    "pras": "schlägt",
+    "prat": "schlug",
+    "perf": "hat geschlagen",
+    "konj_1": "schlage",
+    "konj_2": "schlüge"
+  },
+  {
+    "verb": "schließen",
+    "pras": "schließt",
+    "prat": "schloss",
+    "perf": "hat geschlossen",
+    "konj_1": "schließe",
+    "konj_2": "schlösse"
+  },
+  {
+    "verb": "schneiden",
+    "pras": "schneidet",
+    "prat": "schnitt",
+    "perf": "hat geschnitten",
+    "konj_1": "schneide",
+    "konj_2": "schnitte"
+  },
+  {
+    "verb": "schreiben",
+    "pras": "schreibt",
+    "prat": "schrieb",
+    "perf": "hat geschrieben",
+    "konj_1": "schreibe",
+    "konj_2": "schriebe"
+  },
+  {
+    "verb": "schreien",
+    "pras": "schreit",
+    "prat": "schrie",
+    "perf": "hat geschrieen",
+    "konj_1": "schreie",
+    "konj_2": "schröe"
+  },
+  {
+    "verb": "schreiten",
+    "pras": "schreitet",
+    "prat": "schritt",
+    "perf": "ist geschritten",
+    "konj_1": "schreite",
+    "konj_2": "schritte"
+  },
+  {
+    "verb": "schweigen",
+    "pras": "schweigt",
+    "prat": "schwieg",
+    "perf": "hat geschwiegen",
+    "konj_1": "schweige",
+    "konj_2": "schwöge"
+  },
+  {
+    "verb": "schwimmen",
+    "pras": "schwimmt",
+    "prat": "schwamm",
+    "perf": "ist geschwommen",
+    "konj_1": "schwimme",
+    "konj_2": "schwömme"
+  },
+  {
+    "verb": "sehen",
+    "pras": "siehst",
+    "prat": "sah",
+    "perf": "hat gesehen",
+    "konj_1": "sehe",
+    "konj_2": "sähe"
+  },
+  {
+    "verb": "sein",
+    "pras": "ist",
+    "prat": "war",
+    "perf": "ist gewesen",
+    "konj_1": "sei",
+    "konj_2": "wäre"
+  },
+  {
+    "verb": "singen",
+    "pras": "singt",
+    "prat": "sang",
+    "perf": "hat gesungen",
+    "konj_1": "singe",
+    "konj_2": "sänge"
+  },
+  {
+    "verb": "sinken",
+    "pras": "sinkt",
+    "prat": "sank",
+    "perf": "ist gesunken",
+    "konj_1": "sinke",
+    "konj_2": "sönke"
+  },
+  {
+    "verb": "sitzen",
+    "pras": "sitzt",
+    "prat": "saß",
+    "perf": "hat gesessen",
+    "konj_1": "sitze",
+    "konj_2": "säße"
+  },
+  {
+    "verb": "sollen",
+    "pras": "soll",
+    "prat": "sollte",
+    "perf": "hat gesollt",
+    "konj_1": "solle",
+    "konj_2": "sollte"
+  },
+  {
+    "verb": "sprechen",
+    "pras": "spricht",
+    "prat": "sprach",
+    "perf": "hat gesprochen",
+    "konj_1": "spreche",
+    "konj_2": "spräche"
+  },
+  {
+    "verb": "springen",
+    "pras": "springt",
+    "prat": "sprang",
+    "perf": "ist gesprungen",
+    "konj_1": "springe",
+    "konj_2": "sprönge"
+  },
+  {
+    "verb": "stehen",
+    "pras": "steht",
+    "prat": "stand",
+    "perf": "hat gestanden",
+    "konj_1": "stehe",
+    "konj_2": "stünde"
+  },
+  {
+    "verb": "stehlen",
+    "pras": "stiehlt",
+    "prat": "stahl",
+    "perf": "hat gestohlen",
+    "konj_1": "stehle",
+    "konj_2": "stähle"
+  },
+  {
+    "verb": "steigen",
+    "pras": "steigt",
+    "prat": "stieg",
+    "perf": "ist gestiegen",
+    "konj_1": "steige",
+    "konj_2": "stöge"
+  },
+  {
+    "verb": "sterben",
+    "pras": "stirbt",
+    "prat": "starb",
+    "perf": "ist gestorben",
+    "konj_1": "sterbe",
+    "konj_2": "störbe"
+  },
+  {
+    "verb": "streiten",
+    "pras": "streitet",
+    "prat": "stritt",
+    "perf": "hat gestritten",
+    "konj_1": "streite",
+    "konj_2": "stritte"
+  },
+  {
+    "verb": "tragen",
+    "pras": "trägt",
+    "prat": "trug",
+    "perf": "hat getragen",
+    "konj_1": "trage",
+    "konj_2": "trüge"
+  },
+  {
+    "verb": "treffen",
+    "pras": "trifft",
+    "prat": "traf",
+    "perf": "hat getroffen",
+    "konj_1": "treffe",
+    "konj_2": "träfe"
+  },
+  {
+    "verb": "treten",
+    "pras": "tritt",
+    "prat": "trat",
+    "perf": "ist getreten",
+    "konj_1": "trete",
+    "konj_2": "träte"
+  },
+  {
+    "verb": "trinken",
+    "pras": "trinkt",
+    "prat": "trank",
+    "perf": "hat getrunken",
+    "konj_1": "trinke",
+    "konj_2": "tränke"
+  },
+  {
+    "verb": "trügen",
+    "pras": "trügt",
+    "prat": "trog",
+    "perf": "hat getrogen",
+    "konj_1": "trüge",
+    "konj_2": "tröge"
+  },
+  {
+    "verb": "tun",
+    "pras": "tut",
+    "prat": "tat",
+    "perf": "hat getan",
+    "konj_1": "tue",
+    "konj_2": "täte"
+  },
+  {
+    "verb": "unterbrechen",
+    "pras": "unterbricht",
+    "prat": "unterbrach",
+    "perf": "hat unterbrochen",
+    "konj_1": "unterbreche",
+    "konj_2": "unterbräche"
+  },
+  {
+    "verb": "unternehmen",
+    "pras": "unternimmt",
+    "prat": "unternahm",
+    "perf": "hat unternommen",
+    "konj_1": "unternehme",
+    "konj_2": "unternähme"
+  },
+  {
+    "verb": "verbieten",
+    "pras": "verbietet",
+    "prat": "verbot",
+    "perf": "hat verboten",
+    "konj_1": "verbiete",
+    "konj_2": "verböte"
+  },
+  {
+    "verb": "verderben",
+    "pras": "verdirbt",
+    "prat": "verdarb",
+    "perf": "ist verdorben",
+    "konj_1": "verderbe",
+    "konj_2": "verdürbe"
+  },
+  {
+    "verb": "vergessen",
+    "pras": "vergisst",
+    "prat": "vergaß",
+    "perf": "hat vergessen",
+    "konj_1": "vergesse",
+    "konj_2": "vergässe"
+  },
+  {
+    "verb": "verlassen",
+    "pras": "verlässt",
+    "prat": "verließ",
+    "perf": "hat verlassen",
+    "konj_1": "verlasse",
+    "konj_2": "verließe"
+  },
+  {
+    "verb": "verlieren",
+    "pras": "verliert",
+    "prat": "verlor",
+    "perf": "hat verloren",
+    "konj_1": "verliere",
+    "konj_2": "verlöre"
+  },
+  {
+    "verb": "vermeiden",
+    "pras": "vermeidet",
+    "prat": "vermied",
+    "perf": "hat vermieden",
+    "konj_1": "vermeide",
+    "konj_2": "vermiede"
+  },
+  {
+    "verb": "verzeihen",
+    "pras": "verzeiht",
+    "prat": "verzieh",
+    "perf": "hat verziehen",
+    "konj_1": "verzeihe",
+    "konj_2": "verzöge"
+  },
+  {
+    "verb": "wachsen",
+    "pras": "wächst",
+    "prat": "wuchs",
+    "perf": "ist gewachsen",
+    "konj_1": "wachse",
+    "konj_2": "wüchse"
+  },
+  {
+    "verb": "waschen",
+    "pras": "wäscht",
+    "prat": "wusch",
+    "perf": "hat gewaschen",
+    "konj_1": "wasche",
+    "konj_2": "wüsche"
+  },
+  {
+    "verb": "weichen",
+    "pras": "wreicht",
+    "prat": "wich",
+    "perf": "hat gewichen",
+    "konj_1": "weiche",
+    "konj_2": "wichse"
+  },
+  {
+    "verb": "werben",
+    "pras": "wirbt",
+    "prat": "warb",
+    "perf": "hat geworben",
+    "konj_1": "werbe",
+    "konj_2": "würbe"
+  },
+  {
+    "verb": "werden",
+    "pras": "wird",
+    "prat": "wurde",
+    "perf": "ist geworden",
+    "konj_1": "werde",
+    "konj_2": "würde"
+  },
+  {
+    "verb": "werfen",
+    "pras": "wirft",
+    "prat": "warf",
+    "perf": "hat geworfen",
+    "konj_1": "werfe",
+    "konj_2": "würfe"
+  },
+  {
+    "verb": "wiegen",
+    "pras": "wiegt",
+    "prat": "wog",
+    "perf": "hat gewogen",
+    "konj_1": "wiege",
+    "konj_2": "wöge"
+  },
+  {
+    "verb": "wissen",
+    "pras": "weiß",
+    "prat": "wusste",
+    "perf": "hat gewusst",
+    "konj_1": "wisse",
+    "konj_2": "wüsste"
+  },
+  {
+    "verb": "wollen",
+    "pras": "will",
+    "prat": "wollte",
+    "perf": "hat gewollt",
+    "konj_1": "wolle",
+    "konj_2": "wollte"
+  },
+  {
+    "verb": "wringen",
+    "pras": "wringt",
+    "prat": "wrang",
+    "perf": "hat gewrungen",
+    "konj_1": "wringe",
+    "konj_2": "wränge"
+  },
+  {
+    "verb": "ziehen",
+    "pras": "zieht",
+    "prat": "zog",
+    "perf": "ist gezogen",
+    "konj_1": "ziehe",
+    "konj_2": "zöge"
+  },
+  {
+    "verb": "zwingen",
+    "pras": "zwingt",
+    "prat": "zwang",
+    "perf": "hat gezwungen",
+    "konj_1": "zwinge",
+    "konj_2": "zwänge"
+  }
+]
