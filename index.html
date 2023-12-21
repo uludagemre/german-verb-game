@@ -112,10 +112,10 @@
   <div id="additionalFields">
     <!-- Additional fields will be added here based on the selected difficulty -->
     <div id="field1Container" style="display: none;">
-      <input type="text" id="konj_1" placeholder="Konjuktiv 1">
+      <input type="text" id="konj_1_input" placeholder="Konjuktiv 1">
     </div>
     <div id="field2Container" style="display: none;">
-      <input type="text" id="konj_2" placeholder="Konjuktiv 2">
+      <input type="text" id="konj_1_input" placeholder="Konjuktiv 2">
     </div>
   </div>
   
@@ -200,8 +200,8 @@
       document.getElementById('partizip_input').value = '';
       
       if (difficulty === "difficult") {
-        document.getElementById('prat_input').value = '';
-        document.getElementById('partizip_input').value = '';
+        document.getElementById('konj_1_input').value = '';
+        document.getElementById('konj_2_input').value = '';
       }
     }
 
@@ -225,12 +225,13 @@
       const prat_input = document.getElementById('prat_input').value;
       const perf_input = document.getElementById('partizip_input').value;
 
-      const konj_1_input = document.getElementById('konj_1_input').value;
-      const konj_2_input = document.getElementById('konj_2_input').value;
-
+      
       success_condition = prasens_input.toLowerCase() === currentVerb['pras'] && prat_input.toLowerCase() === currentVerb['prat'] && perf_input.toLowerCase() === currentVerb['perf']
 
       if (difficulty === "difficult"){
+        const konj_1_input = document.getElementById('konj_1_input').value;
+        const konj_2_input = document.getElementById('konj_2_input').value;
+
         success_condition = success_condition && konj_1_input.toLowerCase() === currentVerb['konj_1'] && konj_2_input.toLowerCase() === currentVerb['konj_2']
       } 
 
