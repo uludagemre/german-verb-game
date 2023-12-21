@@ -104,7 +104,7 @@
 
 
   <!-- Input boxes -->
-  <input type="text" id="hat_ist_input" placeholder="hat/ist">
+  <input type="text" id="prasens_input" placeholder="präsens">
   <input type="text" id="prat_input" placeholder="präteritum">
   <input type="text" id="partizip_input" placeholder="partizip II">
 
@@ -112,10 +112,10 @@
   <div id="additionalFields">
     <!-- Additional fields will be added here based on the selected difficulty -->
     <div id="field1Container" style="display: none;">
-      <input type="text" id="field1" placeholder="Field 1">
+      <input type="text" id="konj_1" placeholder="Konjuktiv 1">
     </div>
     <div id="field2Container" style="display: none;">
-      <input type="text" id="field2" placeholder="Field 2">
+      <input type="text" id="konj_2" placeholder="Konjuktiv 2">
     </div>
   </div>
   
@@ -127,7 +127,7 @@
 
   <script>
 
-    const FINAL_SCORE = 5;
+    const FINAL_SCORE = 10;
     // Variable to store the score
     let score = 0;
     // Variable to store the verb data
@@ -139,6 +139,8 @@
     let wrongVerbs = []
 
     let currentVerb = null;
+
+    let difficulty = "";
 
     // Function to load verb data from a file
     async function loadVerbData() {
@@ -193,9 +195,14 @@
     }
 
     function resetPlaceholders() {
-      document.getElementById('hat_ist_input').value = '';
+      document.getElementById('prasens_input').value = '';
       document.getElementById('prat_input').value = '';
       document.getElementById('partizip_input').value = '';
+      
+      if (difficulty === "difficult") {
+        document.getElementById('prat_input').value = '';
+        document.getElementById('partizip_input').value = '';
+      }
     }
 
     function getElementsNotInB(listA, listB) {
@@ -214,18 +221,30 @@
       // Add your scoring logic here
       // For example, you can compare the inputs with the correct values from the randomVerb
 
-      const hat_ist_input = document.getElementById('hat_ist_input').value;
+      const prasens_input = document.getElementById('prasens_input').value;
       const prat_input = document.getElementById('prat_input').value;
       const perf_input = document.getElementById('partizip_input').value;
 
-      if (hat_ist_input.toLowerCase() === currentVerb['hat_ist'] && prat_input.toLowerCase() === currentVerb['prat'] && perf_input.toLowerCase() === currentVerb['perf']) {
+      const konj_1_input = document.getElementById('konj_1_input').value;
+      const konj_2_input = document.getElementById('konj_2_input').value;
+
+      success_condition = prasens_input.toLowerCase() === currentVerb['pras'] && prat_input.toLowerCase() === currentVerb['prat'] && perf_input.toLowerCase() === currentVerb['perf']
+
+      if (difficulty === "difficult"){
+        success_condition = success_condition && konj_1_input.toLowerCase() === currentVerb['konj_1'] && konj_2_input.toLowerCase() === currentVerb['konj_2']
+      } 
+
+      if (success_condition) {
         score += 1
         correctVerbs.push(currentVerb)
       } else {
         wrongVerbs.push(currentVerb)
-
+        
         // Display an alert with the correct forms
-        var correctFormsMessage = `Correct forms: \n\n${currentVerb['hat_ist']} \n${currentVerb['prat']} \n${currentVerb['perf']}`;
+        var correctFormsMessage = `Correct forms: \n\n${currentVerb['pras']} \n${currentVerb['prat']} \n${currentVerb['perf']}`;
+        if (difficulty === "difficult"){
+          correctFormsMessage += `\n${currentVerb['konj_1']} \n${currentVerb['konj_2']}`
+        }
         window.alert(`Incorrect! ${correctFormsMessage}`);
       }
 
@@ -250,7 +269,7 @@
     // Call the loadVerbData function when the page loads to load verb data
     window.addEventListener('load', loadPage);
 
-    const input1 = document.getElementById('hat_ist_input');
+    const input1 = document.getElementById('prasens_input');
     const input2 = document.getElementById('prat_input');
     const input3 = document.getElementById('partizip_input');
 
