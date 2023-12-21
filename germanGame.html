@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starke Verben Spiel</title>
+  <style>
+    /* Center the input boxes and text vertically and horizontally */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 30px;
+    }
+
+    /* Style for the input boxes */
+    input {
+      margin: 15px;
+      padding: 15px;
+      font-size: 18px;
+      /* Increase the input font size */
+    }
+
+    /* Style for the submit button */
+    button {
+      margin: 15px;
+      padding: 15px 30px;
+      font-size: 18px;
+      /* Increase the button font size */
+      background-color: #0898b9;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style for the image */
+    img {
+      width: 200px;
+      /* Increase the image dimensions */
+      height: 200px;
+    }
+
+    /* Style for the text message */
+    h1 {
+      font-size: 36px;
+      /* Increase the message font size */
+      margin-bottom: 20px;
+    }
+
+    /* Style for the score text */
+    #score {
+      margin-top: 30px;
+      font-size: 28px;
+      /* Increase the score font size */
+    }
+
+    #jsonData {
+      padding-top: 20px;
+      /* Adjust the value to your desired padding */
+    }
+
+
+    #container {
+      text-align: center;
+      /* Center the content horizontally within the container */
+    }
+
+    #difficulty {
+      font-size: 18px;
+      /* Adjust the value to your desired font size */
+      height: 40px;
+      /* Adjust the value to set the height of the select element */
+      line-height: 40px;
+      /* Center the text vertically */
+      vertical-align: middle;
+      /* Center the text vertically */
+      margin: 0 auto;
+      /* Center the element horizontally within its container */
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Display the image at the top -->
+  <img
+    src="https://media.licdn.com/dms/image/C560BAQFXRpr6U2qmkg/company-logo_200_200/0/1631362217617?e=2147483647&v=beta&t=CMXKJWLdqHWW8LnVU3cWNqyd_Grr4bSGlK9KshYNo-s"
+    alt="Company Logo">
+
+
+  <!-- Multiple-choice select input for difficulty level -->
+  <div id="container">
+    <select id="difficulty" name="difficulty" onchange="addFields()">
+      <option value="easy">Easy</option>
+      <option value="difficult">Difficult</option>
+    </select>
+  </div>
+
+  <div id="jsonData"></div>
+
+
+  <!-- Input boxes -->
+  <input type="text" id="hat_ist_input" placeholder="hat/ist">
+  <input type="text" id="prat_input" placeholder="präteritum">
+  <input type="text" id="partizip_input" placeholder="partizip II">
+
+
+  <div id="additionalFields">
+    <!-- Additional fields will be added here based on the selected difficulty -->
+    <div id="field1Container" style="display: none;">
+      <input type="text" id="field1" placeholder="Field 1">
+    </div>
+    <div id="field2Container" style="display: none;">
+      <input type="text" id="field2" placeholder="Field 2">
+    </div>
+  </div>
+  
+  <button id="submitButton">Submit</button>
+
+
+  <!-- Display the score at the bottom -->
+  <div id="score">Score: <span id="scoreValue">0</span></div>
+
+  <script>
+
+    const FINAL_SCORE = 5;
+    // Variable to store the score
+    let score = 0;
+    // Variable to store the verb data
+
+    let correctVerbs = []
+
+    let wrongVerbs = []
+
+    let currentVerb = null;
+
+    // Function to load verb data from a file
+    async function loadVerbData() {
+      try {
+        const response = await fetch('data.json');
+        verbData = await response.json();
+      } catch (error) {
+        console.error('Error loading verb data:', error);
+      }
+    }
+
+    function addFields() {
+      var difficulty = document.getElementById("difficulty").value;
+      var field1Container = document.getElementById("field1Container");
+      var field2Container = document.getElementById("field2Container");
+
+      // Hide both additional fields by default
+      field1Container.style.display = "none";
+      field2Container.style.display = "none";
+
+      if (difficulty === "difficult") {
+        // Show the additional fields if difficulty is "difficult"
+        field1Container.style.display = "block";
+        field2Container.style.display = "block";
+      }
+    }
+
+    // Function to display JSON data
+    function displayData(data) {
+      const jsonDataElement = document.getElementById('jsonData');
+      jsonDataElement.innerHTML = data;
+    }
+
+    function randomizeVerb(data) {
+      currentVerb = data[Math.floor(Math.random() * data.length)];
+      displayData(currentVerb['verb']);
+    }
+
+    // Function to play the game
+    function playGame() {
+      if (verbData.length === 0) {
+        alert('Verb data not loaded. Please try again later.');
+        return;
+      }
+
+      randomizeVerb(verbData);
+    }
+
+    function loadPage() {
+      // await loadVerbData();
+      playGame();
+    }
+
+    function resetPlaceholders() {
+      document.getElementById('hat_ist_input').value = '';
+      document.getElementById('prat_input').value = '';
+      document.getElementById('partizip_input').value = '';
+    }
+
+    function getElementsNotInB(listA, listB) {
+      const setB = new Set(listB);
+      return listA.filter(item => !setB.has(item));
+    }
+
+    function pushEnterButton() {
+      if (event.keyCode === 13) {
+        pushSubmitButton();
+      }
+    }
+
+    // Function to calculate and display the score
+    function pushSubmitButton() {
+      // Add your scoring logic here
+      // For example, you can compare the inputs with the correct values from the randomVerb
+
+      const hat_ist_input = document.getElementById('hat_ist_input').value;
+      const prat_input = document.getElementById('prat_input').value;
+      const perf_input = document.getElementById('partizip_input').value;
+
+      if (hat_ist_input.toLowerCase() === currentVerb['hat_ist'] && prat_input.toLowerCase() === currentVerb['prat'] && perf_input.toLowerCase() === currentVerb['perf']) {
+        score += 1
+        correctVerbs.push(currentVerb)
+      } else {
+        wrongVerbs.push(currentVerb)
+
+        // Display an alert with the correct forms
+        var correctFormsMessage = `Correct forms: \n\n${currentVerb['hat_ist']} \n${currentVerb['prat']} \n${currentVerb['perf']}`;
+        window.alert(`Incorrect! ${correctFormsMessage}`);
+      }
+
+      let queryList = getElementsNotInB(verbData, correctVerbs)
+
+      if (score == FINAL_SCORE) {
+        // Display a win message and optionally reset the game
+        alert(`Congratulations! You won the game. \nScore: ${FINAL_SCORE}`);
+        score = 0; // Reset the score if needed
+      }
+
+      resetPlaceholders();
+
+      randomizeVerb(queryList);
+
+      // Display the updated score
+      const scoreValueElement = document.getElementById('scoreValue');
+      scoreValueElement.textContent = score;
+
+    }
+
+    // Call the loadVerbData function when the page loads to load verb data
+    window.addEventListener('load', loadPage);
+
+    const input1 = document.getElementById('hat_ist_input');
+    const input2 = document.getElementById('prat_input');
+    const input3 = document.getElementById('partizip_input');
+
+    input1.addEventListener('keydown', pushEnterButton);
+    input2.addEventListener('keydown', pushEnterButton);
+    input3.addEventListener('keydown', pushEnterButton);
+
+    // Add a click event listener to the submit button
+    const submitButton = document.getElementById('submitButton');
+    submitButton.addEventListener('click', pushSubmitButton);
+
+    let verbData =
+      [
+        {
+          "verb": "fahren",
+          "hat_ist": "ist",
+          "prat": "fuhr",
+          "perf": "gefahren"
+        },
+        {
+          "verb": "wachsen",
+          "hat_ist": "ist",
+          "prat": "wuchs",
+          "perf": "gewachsen"
+        },
+        {
+          "verb": "backen",
+          "hat_ist": "hat",
+          "prat": "buk",
+          "perf": "gebacken"
+        },
+        {
+          "verb": "graben",
+          "hat_ist": "hat",
+          "prat": "grub",
+          "perf": "gegraben"
+        },
+        {
+          "verb": "tragen",
+          "hat_ist": "hat",
+          "prat": "trug",
+          "perf": "getragen"
+        },
+        {
+          "verb": "fallen",
+          "hat_ist": "ist",
+          "prat": "fiel",
+          "perf": "gefallen"
+        },
+        {
+          "verb": "lassen",
+          "hat_ist": "hat",
+          "prat": "ließ",
+          "perf": "gelassen"
+        },
+        {
+          "verb": "schlafen",
+          "hat_ist": "hat",
+          "prat": "schlief",
+          "perf": "geschlafen"
+        },
+        {
+          "verb": "lesen",
+          "hat_ist": "hat",
+          "prat": "las",
+          "perf": "gelesen"
+        },
+        {
+          "verb": "essen",
+          "hat_ist": "hat",
+          "prat": "aß",
+          "perf": "gegessen"
+        },
+        {
+          "verb": "helfen",
+          "hat_ist": "hat",
+          "prat": "half",
+          "perf": "geholfen"
+        },
+        {
+          "verb": "sprechen",
+          "hat_ist": "hat",
+          "prat": "sprach",
+          "perf": "gesprochen"
+        },
+        {
+          "verb": "treffen",
+          "hat_ist": "hat",
+          "prat": "traf",
+          "perf": "getroffen"
+        }
+      ]
+  </script>
+
+</body>
+
+</html>
