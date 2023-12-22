@@ -145,7 +145,7 @@
   },
   {
     "verb": "fernsehen",
-    "pras": "siehst fern",
+    "pras": "sieht fern",
     "prat": "sah fern",
     "perf": "hat ferngesehen",
     "konj_1": "sehe fern",
@@ -369,7 +369,7 @@
   },
   {
     "verb": "leihen",
-    "pras": "leihst",
+    "pras": "leiht",
     "prat": "lieh",
     "perf": "hat geliehen",
     "konj_1": "leihe",
@@ -385,7 +385,7 @@
   },
   {
     "verb": "liegen",
-    "pras": "liegst",
+    "pras": "liegt",
     "prat": "lag",
     "perf": "hat gelegen",
     "konj_1": "liege",
@@ -417,7 +417,7 @@
   },
   {
     "verb": "nehmen",
-    "pras": "nimmst",
+    "pras": "nimmt",
     "prat": "nahm",
     "perf": "hat genommen",
     "konj_1": "nehme",
@@ -569,7 +569,7 @@
   },
   {
     "verb": "sehen",
-    "pras": "siehst",
+    "pras": "sieht",
     "prat": "sah",
     "perf": "hat gesehen",
     "konj_1": "sehe",
