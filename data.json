@@ -16,11 +16,11 @@
     "konj_2": "begänne"
   },
   {
-    "verb": "beißen",
-    "pras": "beißt",
+    "verb": "beissen",
+    "pras": "beisst",
     "prat": "biss",
     "perf": "hat gebissen",
-    "konj_1": "beiße",
+    "konj_1": "beisse",
     "konj_2": "bösse"
   },
   {
@@ -114,10 +114,10 @@
   {
     "verb": "essen",
     "pras": "isst",
-    "prat": "aß",
+    "prat": "ass",
     "perf": "hat gegessen",
     "konj_1": "esse",
-    "konj_2": "äße"
+    "konj_2": "ässe"
   },
   {
     "verb": "fahren",
@@ -176,11 +176,11 @@
     "konj_2": "flöhe"
   },
   {
-    "verb": "fließen",
-    "pras": "fließt",
-    "prat": "floß",
+    "verb": "fliessen",
+    "pras": "fliesst",
+    "prat": "floss",
     "perf": "ist geflossen",
-    "konj_1": "fließe",
+    "konj_1": "fliesse",
     "konj_2": "flösse"
   },
   {
@@ -224,11 +224,11 @@
     "konj_2": "gelänge"
   },
   {
-    "verb": "genießen",
-    "pras": "genießt",
+    "verb": "geniessen",
+    "pras": "geniesst",
     "prat": "genoss",
     "perf": "hat genossen",
-    "konj_1": "genieße",
+    "konj_1": "geniesse",
     "konj_2": "genösse"
   },
   {
@@ -248,11 +248,11 @@
     "konj_2": "gewönne"
   },
   {
-    "verb": "gießen",
-    "pras": "gießt",
+    "verb": "giessen",
+    "pras": "giesst",
     "prat": "goss",
     "perf": "hat gegossen",
-    "konj_1": "gieße",
+    "konj_1": "giesse",
     "konj_2": "gösse"
   },
   {
@@ -296,12 +296,12 @@
     "konj_2": "hinge"
   },
   {
-    "verb": "heißen",
-    "pras": "heißt",
-    "prat": "hieß",
-    "perf": "hat geheißen",
-    "konj_1": "heiße",
-    "konj_2": "hieße"
+    "verb": "heissen",
+    "pras": "heisst",
+    "prat": "hiess",
+    "perf": "hat geheissen",
+    "konj_1": "heisse",
+    "konj_2": "hiesse"
   },
   {
     "verb": "helfen",
@@ -346,10 +346,10 @@
   {
     "verb": "lassen",
     "pras": "lässt",
-    "prat": "ließ",
+    "prat": "liess",
     "perf": "hat gelassen",
     "konj_1": "lasse",
-    "konj_2": "ließe"
+    "konj_2": "liesse"
   },
   {
     "verb": "laufen",
@@ -440,11 +440,11 @@
     "konj_2": "riete"
   },
   {
-    "verb": "reißen",
-    "pras": "reißt",
+    "verb": "reissen",
+    "pras": "reisst",
     "prat": "riss",
     "perf": "hat gerissen",
-    "konj_1": "reiße",
+    "konj_1": "reisse",
     "konj_2": "risse"
   },
   {
@@ -488,11 +488,11 @@
     "konj_2": "schöbe"
   },
   {
-    "verb": "schießen",
-    "pras": "schießt",
+    "verb": "schiessen",
+    "pras": "schiesst",
     "prat": "schoss",
     "perf": "hat geschossen",
-    "konj_1": "schieße",
+    "konj_1": "schiesse",
     "konj_2": "schösse"
   },
   {
@@ -512,11 +512,11 @@
     "konj_2": "schlüge"
   },
   {
-    "verb": "schließen",
-    "pras": "schließt",
+    "verb": "schliessen",
+    "pras": "schliesst",
     "prat": "schloss",
     "perf": "hat geschlossen",
-    "konj_1": "schließe",
+    "konj_1": "schliesse",
     "konj_2": "schlösse"
   },
   {
@@ -602,10 +602,10 @@
   {
     "verb": "sitzen",
     "pras": "sitzt",
-    "prat": "saß",
+    "prat": "sass",
     "perf": "hat gesessen",
     "konj_1": "sitze",
-    "konj_2": "säße"
+    "konj_2": "sässe"
   },
   {
     "verb": "sollen",
@@ -754,7 +754,7 @@
   {
     "verb": "vergessen",
     "pras": "vergisst",
-    "prat": "vergaß",
+    "prat": "vergass",
     "perf": "hat vergessen",
     "konj_1": "vergesse",
     "konj_2": "vergässe"
@@ -762,10 +762,10 @@
   {
     "verb": "verlassen",
     "pras": "verlässt",
-    "prat": "verließ",
+    "prat": "verliess",
     "perf": "hat verlassen",
     "konj_1": "verlasse",
-    "konj_2": "verließe"
+    "konj_2": "verliesse"
   },
   {
     "verb": "verlieren",
@@ -849,7 +849,7 @@
   },
   {
     "verb": "wissen",
-    "pras": "weiß",
+    "pras": "weiss",
     "prat": "wusste",
     "perf": "hat gewusst",
     "konj_1": "wisse",
